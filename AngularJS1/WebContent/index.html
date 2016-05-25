@@ -3,6 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>AngularJS</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/infy_logo.gif">
  <script src="Scripts/jquery-2.2.2.js"></script>
 <script src="Scripts/bootstrap.js"></script>
 <script src="Scripts/angular.js"></script>
@@ -11,6 +12,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <link href="css/bootswatch/flatly/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
 
 
 <!-- all the modules would be located here -->
@@ -21,7 +23,7 @@
 
 </head>
 <body>
-	<div ng-app="myApp">
+	<div ng-app="myApp" ng-controller="loginController">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -37,8 +39,8 @@
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Employee <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Projects</a></li>
+						<li class="active"><a href="#" >Employee <span class="sr-only">(current)</span></a></li>
+						<li><a href="" ng-click="details()">Projects</a></li>
 						<li class="dropdown"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-expanded="false">Products
 								<span class="caret"></span>
@@ -61,8 +63,9 @@
 						<span class="glyphicon glyphicon-search"></span>
 						</button>
 					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Contact Us</a></li>
+					<ul  class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+					
 					</ul>
 				</div>
 			</div>

@@ -15,7 +15,7 @@
 		
 		$scope.invalid = {
 				username: false,
-				password: true
+				password: false
 		}
 		
 		$scope.login = function(){
@@ -36,6 +36,10 @@
 			else{
 				console.error("failed validation");
 			}
+		}
+		
+		$scope.details = function(){
+			$location.url("/details");
 		}
 	})
 })();
