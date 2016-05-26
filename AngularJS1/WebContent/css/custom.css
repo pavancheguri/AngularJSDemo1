@@ -1,3 +1,11 @@
 .invalid-input {
     border:solid 2px #e74c3c
 }
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 30%;      
+      margin: auto;
+}
+.clickable{
+	cursor: pointer;
+}
